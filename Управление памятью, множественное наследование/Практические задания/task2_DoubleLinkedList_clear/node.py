@@ -12,7 +12,7 @@ class Node:
         """
         self.value = value
 
-        self.next = next_  # вызовется setter
+        self.next = next_  # вызывется setter
 
     def __repr__(self) -> str:
         return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
